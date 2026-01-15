@@ -20,7 +20,7 @@ Sistem ini menyelesaikan masalah penggunaan Excel di telefon pintar yang leceh d
 ## 🛠️ Cara Pemasangan (Setup)
 
 Untuk memastikan aplikasi ini berfungsi, pastikan anda mempunyai fail-fail berikut di dalam folder yang sama:
-* supersim.html
+* index.html
 * supersim.css
 * supersim.js
 * aircraft.css
@@ -28,7 +28,7 @@ Untuk memastikan aplikasi ini berfungsi, pastikan anda mempunyai fail-fail berik
 
 ### Langkah-Langkah:
 1. Muat turun semua fail tersebut.
-2. Buka fail supersim.html guna browser di phone anda.
+2. Buka fail index.html guna browser di phone anda.
 3. Gunakan fungsi "Add to Home Screen" untuk akses pantas macam app sebenar.
 
 ---
