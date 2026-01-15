@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>AKULAS v1.0.0 | SuperSim AMT Pro</title>
+    <link rel="stylesheet" href="supersim.css">
+    <link rel="stylesheet" href="aircraft.css">
+</head>
+<body>
+
+<div class="sticky-header">
+    <div class="app-brand-header">AKULAS v1.0.0 | SuperSim AMT Pro</div>
+    <div class="header-grid">
+        <div class="header-item"><label>ECO</label><div class="price-box" onclick="copyVal('resEcoPrice')"><span id="resEcoPrice">0</span></div></div>
+        <div class="header-item"><label>BUS</label><div class="price-box" onclick="copyVal('resBusPrice')"><span id="resBusPrice">0</span></div></div>
+        <div class="header-item"><label>1ST</label><div class="price-box" onclick="copyVal('resFstPrice')"><span id="resFstPrice">0</span></div></div>
+        <div class="header-item"><label>CRG</label><div class="price-box" onclick="copyVal('resCrgPrice')"><span id="resCrgPrice">0</span></div></div>
+    </div>
+    <div class="header-footer">
+        <span id="grandTotal" class="green">Turnover: $0</span>
+        <button class="btn-reset" onclick="resetAll()">RESET ALL</button>
+    </div>
+</div>
+
+<div class="content-container">
+    <div class="card">
+        <div class="card-title">1. AUDIT PRICE ($)</div>
+        <div class="input-grid-4">
+            <input type="number" id="ecoPrice" oninput="calcAll()" onfocus="this.value=''" placeholder="Eco" inputmode="numeric" class="m-input">
+            <input type="number" id="busPrice" oninput="calcAll()" onfocus="this.value=''" placeholder="Bus" inputmode="numeric" class="m-input">
+            <input type="number" id="fstPrice" oninput="calcAll()" onfocus="this.value=''" placeholder="1st" inputmode="numeric" class="m-input">
+            <input type="number" id="crgPrice" oninput="calcAll()" onfocus="this.value=''" placeholder="Crg" inputmode="numeric" class="m-input">
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-title">2. AUDIT DEMAND</div>
+        <div class="input-grid-4">
+            <input type="number" id="ecoDemand" oninput="calcAll()" onfocus="this.value=''" placeholder="Eco" inputmode="numeric" class="m-input">
+            <input type="number" id="busDemand" oninput="calcAll()" onfocus="this.value=''" placeholder="Bus" inputmode="numeric" class="m-input">
+            <input type="number" id="fstDemand" oninput="calcAll()" onfocus="this.value=''" placeholder="1st" inputmode="numeric" class="m-input">
+            <input type="number" id="crgDemand" oninput="calcAll()" onfocus="this.value=''" placeholder="Crg" inputmode="numeric" class="m-input">
+        </div>
+    </div>
+
+    <div class="card fleet-card">
+        <div class="card-title">3. FLEET LIST (RAW SEATS)</div>
+        <div id="fleetContainer"></div>
+        <div class="total-cap-row">
+            <div style="font-size:0.5rem; color:#60a5fa; text-align:left;">TOTAL CAP(x2):</div>
+            <div id="dispTotalEco">0</div><div id="dispTotalBus">0</div><div id="dispTotalFst">0</div><div id="dispTotalCrg">0</div><div></div><div></div>
+        </div>
+        <button class="btn-add" onclick="addAircraft()">+ ADD AIRCRAFT</button>
+    </div>
+
+    <div class="info-strip">
+        <div class="info-item">Rem Eco: <span id="resEcoRemDem">0</span></div>
+        <div class="info-item">Rem Bus: <span id="resBusRemDem">0</span></div>
+        <div class="info-item">Rem 1st: <span id="resFstRemDem">0</span></div>
+        <div class="info-item">Rem Crg: <span id="resCrgRemDem">0</span></div>
+    </div>
+
+    <footer class="app-footer">AKULAS v1.0.0 | AMT Tools</footer>
+</div>
+
+<div id="toast" class="toast">Copied!</div>
+
+<script src="aircraft.js"></script>
+<script src="supersim.js"></script>
+</body>
+</html>

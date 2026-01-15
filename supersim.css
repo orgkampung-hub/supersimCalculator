@@ -1,0 +1,45 @@
+:root { --bg: #0b0f1a; --card: #161b2a; --input-bg: #1f2937; --accent: #fbbf24; --text: #e5e7eb; }
+body { 
+    font-family: -apple-system, sans-serif; 
+    background-color: var(--bg) !important; 
+    color: var(--text); 
+    margin: 0 !important; 
+    padding-top: 155px !important; 
+}
+.sticky-header { 
+    position: fixed !important; 
+    top: 0 !important; 
+    left: 0 !important; 
+    width: 100% !important; 
+    background: #111827 !important; 
+    z-index: 99999 !important; 
+    border-bottom: 2px solid #374151; 
+    padding: 8px 0px 10px 0px; 
+    box-shadow: 0 4px 12px rgba(0,0,0,0.6);
+}
+.app-brand-header {
+    font-size: 0.65rem;
+    color: #60a5fa;
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+}
+.header-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 6px; padding: 0 10px; }
+.header-item label { font-size: 0.6rem; color: #9ca3af; font-weight: 800; display: block; margin-bottom: 2px; text-align: center; }
+.price-box { background: #000; border: 1px solid var(--accent); border-radius: 6px; padding: 8px 0; text-align: center; cursor: pointer; }
+.price-box span { font-family: monospace; font-size: 1.15rem; font-weight: 900; color: var(--accent); }
+.header-footer { display: flex; justify-content: space-between; align-items: center; margin-top: 10px; padding: 0 15px; }
+.green { color: #10b981; font-family: monospace; font-size: 0.75rem; font-weight: bold; }
+.btn-reset { background: #7f1d1d; color: #f87171; border: none; font-size: 0.65rem; padding: 6px 12px; border-radius: 4px; font-weight: bold; }
+.content-container { padding: 10px; }
+.card { background: var(--card); padding: 15px; border-radius: 12px; margin-bottom: 12px; }
+.card-title { font-size: 0.65rem; color: #60a5fa; font-weight: bold; margin-bottom: 10px; }
+.input-grid-4 { display: grid; grid-template-columns: repeat(4, 1fr); gap: 6px; }
+.m-input { width: 100%; padding: 12px 2px; background: var(--input-bg); border: 1px solid #374151; border-radius: 8px; color: white; text-align: center; font-size: 1rem; }
+.info-strip { display: grid; grid-template-columns: repeat(4, 1fr); gap: 4px; margin-top: 5px; }
+.info-item { background: #1f2937; padding: 6px 2px; border-radius: 4px; font-size: 0.55rem; color: #9ca3af; text-align: center; }
+.info-item span { color: #f87171; font-weight: bold; }
+.app-footer { text-align: center; padding: 30px 0; font-size: 0.6rem; color: #475569; letter-spacing: 1px; text-transform: uppercase; }
+.toast { position: fixed; bottom: 30px; left: 50%; transform: translateX(-50%); background: #10b981; color: white; padding: 10px 25px; border-radius: 25px; font-size: 0.8rem; display: none; z-index: 100000; }
