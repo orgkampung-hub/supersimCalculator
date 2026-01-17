@@ -1,0 +1,17 @@
+{
+  "short_name": "AKULAS",
+  "name": "AKULAS v1.1.7 AMT Pro",
+  "icons": [
+    {
+      "src": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1MTIgNTEyIj48cmVjdCB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgcng9IjY0IiBmaWxsPSIjMTExODI3Ii8+PHBhdGggZD0iTTM1MiAxOTJMMjU2IDk2TDE2MCAxOTJWMzIwTDI1NiA0MTZMMzUyIDMyMFYxOTJaIiBmaWxsPSIjZmJiZjI0Ii8+PHBhdGggZD0iTTI1NiAxNjBMMjEwIDI1NkgzMDJMMjU2IDE2MFoiIGZpbGw9IiMwYjBmMWEiLz48L3N2Zz4=",
+      "type": "image/svg+xml",
+      "sizes": "512x512",
+      "purpose": "any maskable"
+    }
+  ],
+  "start_url": "./index.html",
+  "background_color": "#0b0f1a",
+  "display": "standalone",
+  "scope": "./",
+  "theme_color": "#111827"
+}
